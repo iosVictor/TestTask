@@ -76,8 +76,8 @@ class FeedListViewController: UITableViewController, XMLParserDelegate {
         
         image = resizeImage(image: image!, toTheSize: CGSize(width: 80, height: 80))
         
-        cellImageLayer!.cornerRadius = 40
-        cellImageLayer!.masksToBounds = true
+        cellImageLayer?.cornerRadius = 40
+        cellImageLayer?.masksToBounds = true
         cellBGColorView.backgroundColor = #colorLiteral(red: 0, green: 0.5898008943, blue: 1, alpha: 1)
         
         if indexPath.row % 2 == 0 {
